@@ -1,0 +1,26 @@
+name: ClassSystem
+main: net.landoflegend.Main
+version: 0.1
+description: Class system.
+author: Waterflames
+commands:
+   axeThrow:
+      description: Testing command for the classSystem.
+      usage: |
+              /<command>
+   wrath:
+      description: Testing command for the classSystem.
+      usage: |
+              /<command>
+   frenzy:
+      description: Testing command for the classSystem.
+      usage: |
+              /<command>
+   leap:
+      description: Testing command for the classSystem.
+      usage: |
+              /<command>
+   mightySwing:
+      description: Testing command for the classSystem.
+      usage: |
+              /<command>
