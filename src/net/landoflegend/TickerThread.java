@@ -16,12 +16,12 @@ public class TickerThread extends Thread{
                 Iterator<TickerTask> iterator = tasks.values().iterator();
                 while(iterator.hasNext()){
                     TickerTask current = iterator.next();
-                    if(!current.isRepeating()){
+                    if(current.getDelay() != -1){
                         current.setDelay(current.getDelay()-1);
                     }
-                    if(current.getDelay() <= 0){
+                    if(current.getDelay() <= 0 || current.isRepeating()){
                         current.run();
-                        if(!current.isRepeating()){
+                        if(current.getDelay() != -1){
                             tasks.remove(current);
                         }
                     }
