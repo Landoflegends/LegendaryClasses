@@ -5,6 +5,7 @@ import java.util.HashMap;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import net.landoflegend.classes.Berserker;
+import net.landoflegend.classes.Guardian;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
@@ -12,15 +13,18 @@ import org.bukkit.plugin.java.JavaPlugin;
 import org.getspout.spoutapi.player.SpoutPlayer;
 
 public class Main extends JavaPlugin{
+    public static Main plugin;
+    
     private static TickerThread ticker;
     private static PlayerHandler playerRegHandler;
-
+    
     @Override
     public void onDisable() {
     }
 
     @Override
     public void onEnable() {
+        plugin = this;
         ticker = new TickerThread();
         ticker.start();
         
@@ -57,6 +61,11 @@ public class Main extends JavaPlugin{
         else if("mightySwing".equals(command.getName())){
             Berserker berserker = Berserker.buildBerserker((Player)sender);
             berserker.doMightySwing();
+            return true;
+        }
+        else if("judgement".equals(command.getName())){
+            Guardian guard = Guardian.buildGuardian((Player)sender);
+            guard.doJudgement();
             return true;
         }
         return false;

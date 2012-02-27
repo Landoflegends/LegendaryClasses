@@ -24,3 +24,7 @@ commands:
       description: Testing command for the classSystem.
       usage: |
               /<command>
+   judgement:
+      description: Testing command for the classSystem.
+      usage: |
+              /<command>

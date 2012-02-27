@@ -38,7 +38,7 @@ public class PlayerHandler {
                 classPlayerMap.put(newBerserker, player);
                 break;
             case GUARDIAN:
-                Guardian newGuardian = Guardian.buildCassador(player);
+                Guardian newGuardian = Guardian.buildGuardian(player);
                 playerMap.put(player, newGuardian);
                 classPlayerMap.put(newGuardian, player);
                 break;
