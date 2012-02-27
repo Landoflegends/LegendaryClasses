@@ -1,8 +1,8 @@
 package net.landoflegend.classes;
 
 import java.util.ArrayList;
-import net.landoflegend.Main;
-import net.landoflegend.TickerTask;
+import net.landoflegend.classSystem.Main;
+import net.landoflegend.classSystem.TickerTask;
 import net.minecraft.server.EntityPlayer;
 import org.bukkit.Location;
 import org.bukkit.Material;

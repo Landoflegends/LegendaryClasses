@@ -1,4 +1,4 @@
-package net.landoflegend;
+package net.landoflegend.classSystem;
 
 import java.util.ArrayList;
 import java.util.Arrays;

@@ -1,6 +1,6 @@
 package net.landoflegend.classes;
 
-import net.landoflegend.Main;
+import net.landoflegend.classSystem.Main;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;

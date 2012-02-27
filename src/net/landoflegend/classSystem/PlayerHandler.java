@@ -1,4 +1,4 @@
-package net.landoflegend;
+package net.landoflegend.classSystem;
 
 import java.io.File;
 import java.io.IOException;
@@ -7,7 +7,6 @@ import net.landoflegend.classes.Berserker;
 import net.landoflegend.classes.Cassador;
 import net.landoflegend.classes.ClassPlayer;
 import net.landoflegend.classes.Guardian;
-import me.blackhawklex.legendaryclans.party.PartyManager;
 import net.landoflegend.classes.ClassPlayer.ClassEnum;
 import org.getspout.spoutapi.player.SpoutPlayer;
 

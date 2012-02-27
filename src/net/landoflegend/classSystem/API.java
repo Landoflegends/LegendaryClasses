@@ -1,4 +1,4 @@
-package net.landoflegend;
+package net.landoflegend.classSystem;
 
 import net.landoflegend.classes.Berserker;
 import net.landoflegend.classes.ClassPlayer;
